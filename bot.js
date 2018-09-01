@@ -20,6 +20,9 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'The Creation') {
     	message.channel.sendMessage('You talking about me?');
+        if(message.content === 'yes'){
+            message.channel.sendMessage('R00d');
+        }
   	}
 });
 
