@@ -18,6 +18,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.content === 'Yeet') {
+    	message.channel.sendMessage('Yeet yeet potato skeet');
+  	}
+});
+
+client.on('message', message => {
     if (message.content === 'The Creation') {
     	message.channel.sendMessage('You talking about me?');
   	}
